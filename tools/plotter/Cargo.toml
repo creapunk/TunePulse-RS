@@ -1,0 +1,15 @@
+[package]
+name = "plotter"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+probe-rs = "0.21.1"    # For debugging and communicating with the embedded device
+egui = "0.29.1" 
+egui_plot = "0.29.0"
+tokio = { version = "1", features = ["full"] }  # for async if needed for real-time updates
+ringbuf = "0.4.7"
+eframe = "0.29.1"
+crossbeam-queue = "0.3"

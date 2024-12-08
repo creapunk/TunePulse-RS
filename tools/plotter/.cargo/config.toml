@@ -1,0 +1,6 @@
+# This will clear any inherited target settings
+[build]
+target = "x86_64-pc-windows-msvc"  # or whatever your host platform is
+
+[target.'cfg(all(target_arch = "x86_64", target_os = "windows"))']
+rustflags = []  # This clears any inherited rustflags
